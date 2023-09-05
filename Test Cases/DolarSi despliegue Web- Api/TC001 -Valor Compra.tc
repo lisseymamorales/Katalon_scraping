@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC001 -Valor Compra</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1a02e36-b60e-4eb9-8da9-ab9b86ac3c0e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1725af84-e8b4-462d-b387-fdddd7f4e59d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1725af84-e8b4-462d-b387-fdddd7f4e59d</id>
+      <masked>false</masked>
+      <name>value_compra</name>
+   </variable>
+</TestCaseEntity>
