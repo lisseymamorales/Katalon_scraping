@@ -22,31 +22,38 @@ import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.openBrowser('https://www.dolarsi.com/')
 
+/*declaración arreglo con id de sustición en TestObject para iteración*/
 def id_selector = ['c1', 'c2']
 
+/*declaración arreglo para guardar valores extraídos de la web*/
 def valorWeb = new String[2]
 
+/*iteración sobre valores id - testobject*/
 for (int i = 0; i < 2; i++) {
+	/*asignación valor a variable value_compra para sustitución en objeto*/
     value_compra = (id_selector[i])
 
+	/*extracción de valor de la web en posición indicada*/
     (valorWeb[i]) = WebUI.getText(findTestObject('Page_Dolarsi/valor_dolar_compra', [('id') : value_compra]))
 }
 
+/*consulta API consumida por web evaluada para aplicación de assertion*/
 response = WS.sendRequest(findTestObject('Api_DolarSi/DolarSi'))
 
+/*Creación de variable result para manejo de respuesta API*/
 def slurper = new JsonSlurper()
-
 def result = slurper.parseText(response.getResponseText())
 
 for (int i = 0; i < 2; i++) {
 	
-	String valueWeb = valorWeb[i].replace('$ ', "")
-	String valueApi = result[i].casa.compra
+	String valueWeb = valorWeb[i].replace('$ ', "") /*eliminación de caracter especial $ de valor web para comparación*/
+	String valueApi = result[i].casa.compra /*extracción de valor de respuesta api*/
 	
+	/*comparación de valores web - api*/
 	if(valueWeb == valueApi) {
 		println "Despliegue de valor correcto " + valueApi
 	}else {
-		keywordUtil.markFailed()
+		keywordUtil.markFailed() 
 	}
 
 }
