@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>DolarSi</name>
+   <name>DolarSi-Venta</name>
    <tag></tag>
-   <elementGuidId>db7e8cdf-9957-4691-ab77-c147068c7f01</elementGuidId>
+   <elementGuidId>9f897306-5668-4139-9337-21c0bb453725</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <autoUpdateContent>true</autoUpdateContent>
@@ -39,7 +39,7 @@ RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-WS.verifyElementPropertyValue(response, '[0].casa.compra', &quot;347,02&quot;)
-WS.verifyElementPropertyValue(response, '[1].casa.compra', &quot;730,00&quot;)</verificationScript>
+WS.verifyElementPropertyValue(response, '[0].casa.venta', &quot;367,02&quot;)
+WS.verifyElementPropertyValue(response, '[1].casa.venta', &quot;735,00&quot;)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
