@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>valor_dolar_venta</name>
+   <name>valor_dolar_compra</name>
    <tag></tag>
-   <elementGuidId>d36580f4-219c-4b0a-9451-3e02034246ab</elementGuidId>
+   <elementGuidId>e08e7159-8bea-4cf1-91be-0750c2ddc01b</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@id='${id}']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>id(&quot;conten&quot;)/div[@class=&quot;conte&quot;]/div[@class=&quot;cont-cv&quot;]/div[@class=&quot;vent&quot;]/div[@id=&quot;${id_v}&quot;][count(. | //*[@id = '${id_v}' and @ref_element = 'Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool']) = count(//*[@id = '${id_v}' and @ref_element = 'Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool'])]</value>
+         <value>id(&quot;conten&quot;)/div[@class=&quot;conte&quot;]/div[@class=&quot;cont-cv&quot;]/div[@class=&quot;comp&quot;]/div[@id=&quot;${id}&quot;][count(. | //*[@id = '${id}' and @ref_element = 'Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool']) = count(//*[@id = '${id}' and @ref_element = 'Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool'])]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#v1</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//div[@id='v1']</value>
+         <value>#c1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,15 +26,15 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c7df0977-f625-4ac3-b2e6-9a50a1bc94ea</webElementGuid>
+      <webElementGuid>1d269e45-32e4-430d-bddd-07527cb8d55e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>${id_v}</value>
-      <webElementGuid>7544905a-1e2d-4d8d-94fe-3924fce54907</webElementGuid>
+      <value>${id}</value>
+      <webElementGuid>a93e4a32-f98d-48a7-a7dd-23923866b177</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,102 +42,102 @@
       <name>class</name>
       <type>Main</type>
       <value>val-cv</value>
-      <webElementGuid>ecf05e26-3fec-418b-b7c9-a73c8f6f3508</webElementGuid>
+      <webElementGuid>eeaa1372-4f6c-4208-a624-aa102e7265ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value></value>
-      <webElementGuid>bdad5167-a505-4031-a3f3-fb72ea320fc1</webElementGuid>
+      <value>$ 347,02</value>
+      <webElementGuid>dcaf7f0b-f039-4321-9b5d-7aa0027d08c8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;conten&quot;)/div[@class=&quot;conte&quot;]/div[@class=&quot;cont-cv&quot;]/div[@class=&quot;vent&quot;]/div[@id=&quot;${id_v}&quot;]</value>
-      <webElementGuid>c840cd1c-ea12-4c08-89f2-5303cb4e3e1a</webElementGuid>
+      <value>id(&quot;conten&quot;)/div[@class=&quot;conte&quot;]/div[@class=&quot;cont-cv&quot;]/div[@class=&quot;comp&quot;]/div[@id=&quot;${id}&quot;]</value>
+      <webElementGuid>24f9e351-363a-4784-8b06-2ca5c48b5207</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool</value>
-      <webElementGuid>a69cce85-16c3-4c42-a86e-06d4bd428de8</webElementGuid>
+      <value>Object Repository/DolarSi/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool</value>
+      <webElementGuid>c1c2e2e0-e315-475d-865f-b81d36355084</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//div[@id='v1']</value>
-      <webElementGuid>baf955a1-155f-415f-959b-28eb4ba2740c</webElementGuid>
+      <value>//div[@id='${id]</value>
+      <webElementGuid>9a37df99-4f7b-474b-9704-fec4de8ef303</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//center[@id='conten']/div/div[2]/div[2]/div[2]</value>
-      <webElementGuid>71aeea1b-8538-410f-9751-4d3890b72f5d</webElementGuid>
+      <value>//center[@id='conten']/div/div[2]/div/div[2]</value>
+      <webElementGuid>6cf1f237-0c6b-4a87-934d-856ae23a5b9e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='VENTA'])[1]/following::div[1]</value>
-      <webElementGuid>9bf045fa-3468-4a19-ab75-dd36a8593866</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='COMPRA'])[1]/following::div[1]</value>
+      <webElementGuid>75d84676-d2dd-485e-9d5f-ac70bbfab104</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='$ 347,02'])[1]/following::div[3]</value>
-      <webElementGuid>f0883a9a-93c5-4f06-86c7-4fc06a71ce46</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DOLAR OFICIAL'])[1]/following::div[4]</value>
+      <webElementGuid>bd33a0b2-8453-477a-baf3-28bf581f1993</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='VARIACIÓN +0,11%'])[1]/preceding::div[1]</value>
-      <webElementGuid>bdb952b8-d850-4d3a-914c-873065fb3a5f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='VENTA'])[1]/preceding::div[1]</value>
+      <webElementGuid>a7972d80-00ad-4c2b-9d71-5bbc82c9da3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='ACTUALIZADO: 04/09/2023 11:30'])[1]/preceding::div[2]</value>
-      <webElementGuid>b3e55296-887c-4624-8d89-b6e6331b040c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='$ 367,02'])[1]/preceding::div[2]</value>
+      <webElementGuid>15a560e4-01ba-4252-b35f-178c27aada75</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='$ 367,02']/parent::*</value>
-      <webElementGuid>166ce709-01c6-4a47-abdf-6e8ac233ed91</webElementGuid>
+      <value>//*/text()[normalize-space(.)='$ 347,02']/parent::*</value>
+      <webElementGuid>a6c14ec7-5e0e-4e69-9a96-65c582198fcf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/div[2]/div[2]/div[2]</value>
-      <webElementGuid>4dac22d9-5d09-4dcd-86b4-a0de5975fdbc</webElementGuid>
+      <value>//div/div[2]/div/div[2]</value>
+      <webElementGuid>3dfbdd6d-3c64-4edd-87c7-95017e59c4da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[@id = 'v1' and (text() = '$ 367,02' or . = '$ 367,02')]</value>
-      <webElementGuid>bbe8660e-a468-45a2-8fae-4be569c467f6</webElementGuid>
+      <value>//div[@id = 'c1' and (text() = '$ 347,02' or . = '$ 347,02')]</value>
+      <webElementGuid>5a5edfec-3c95-4b3d-b2c0-79ef962c1553</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

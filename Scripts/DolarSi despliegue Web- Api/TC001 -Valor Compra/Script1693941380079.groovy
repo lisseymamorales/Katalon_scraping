@@ -34,11 +34,11 @@ for (int i = 0; i < 2; i++) {
     value_compra = (id_selector[i])
 
 	/*extracción de valor de la web en posición indicada*/
-    (valorWeb[i]) = WebUI.getText(findTestObject('Page_Dolarsi/valor_dolar_compra', [('id') : value_compra]))
+    (valorWeb[i]) = WebUI.getText(findTestObject('DolarSi/Page_Dolarsi/valor_dolar_compra', [('id') : value_compra]))
 }
 
 /*consulta API consumida por web evaluada para aplicación de assertion*/
-response = WS.sendRequest(findTestObject('Api_DolarSi/DolarSi'))
+response = WS.sendRequest(findTestObject('DolarSi/Api_DolarSi/DolarSi'))
 
 /*Creación de variable result para manejo de respuesta API*/
 def slurper = new JsonSlurper()

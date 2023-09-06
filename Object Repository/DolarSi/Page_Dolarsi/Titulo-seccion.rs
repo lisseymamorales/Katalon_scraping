@@ -6,19 +6,19 @@
    <elementGuidId>3e7fe43e-3643-465a-94a9-551b001d484e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '${titulo_seccion}' or . = '${titulo_seccion}') and @ref_element = 'Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value>div.header-text</value>
+         <key>IMAGE</key>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//center[@id='conten']/div/div/div[2]</value>
       </entry>
       <entry>
-         <key>IMAGE</key>
+         <key>BASIC</key>
+         <value>//*[(text() = '${titulo_seccion}' or . = '${titulo_seccion}') and @ref_element = 'Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.header-text</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -60,7 +60,7 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool</value>
+      <value>Object Repository/DolarSi/Page_Dolarsi/iframe_Precio del Dlar HOY en Argentina_frame-tool</value>
       <webElementGuid>118cf356-5cf7-41ad-9a8d-dd8ec48236a1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>

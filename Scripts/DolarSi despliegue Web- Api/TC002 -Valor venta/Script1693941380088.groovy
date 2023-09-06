@@ -31,13 +31,13 @@ def valorWeb = new String[2]
 for (int i = 0; i < 2; i++) {
     value_venta = (id_selector[i])
 
-	(valorWeb[i]) = WebUI.getText(findTestObject('Page_Dolarsi/valor_dolar_venta', [('id_v') : value_venta]))
+	(valorWeb[i]) = WebUI.getText(findTestObject('DolarSi/Page_Dolarsi/valor_dolar_venta', [('id_v') : value_venta]))
     
 }
 
 
 /*consulta API consumida por web evaluada para aplicación de assertion*/
-response = WS.sendRequest(findTestObject('Api_DolarSi/DolarSi-Venta'))
+response = WS.sendRequest(findTestObject('DolarSi/Api_DolarSi/DolarSi-Venta'))
 
 /*Creación de variable result para manejo de respuesta API*/
 def slurper = new JsonSlurper()

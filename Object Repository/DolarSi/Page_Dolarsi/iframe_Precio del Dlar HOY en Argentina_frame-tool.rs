@@ -6,12 +6,12 @@
    <elementGuidId>9a378cc7-2bdf-4116-83ae-740f5fe5bf3e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#frame-tool</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//iframe[@id='frame-tool']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#frame-tool</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

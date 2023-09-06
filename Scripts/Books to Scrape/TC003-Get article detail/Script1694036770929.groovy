@@ -17,16 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://www.dolarsi.com/')
+String title = "It's Only the Himalayas"
 
-def titulo = ['DOLAR OFICIAL', 'DOLAR BLUE', 'DOLAR PROMEDIO']
+WebUI.openBrowser('https://books.toscrape.com/catalogue/category/books/travel_2/index.html')
+
+println WebUI.getText(findTestObject('Books to Scrape/Page -Books to Scrape/pagina_item_resultados/Titulo_articulo', [('title') : title]))
 
 
-for(int i=0; i<3; i++) {
-	
-	x = titulo[i]
-	valorWeb = WebUI.getText(findTestObject('DolarSi/Page_Dolarsi/Titulo-seccion', [('titulo_seccion') : x]))
-	
-	println(valorWeb)
-}
+def prueba_object=  (findTestObject('Object Repository/Books to Scrape/Page -Books to Scrape/pagina_item_resultados/Item_pagina_categoria').selectorCollection)
 
+println prueba_object 

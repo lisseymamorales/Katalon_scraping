@@ -16,17 +16,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-WebUI.openBrowser('https://www.dolarsi.com/')
 
-def titulo = ['DOLAR OFICIAL', 'DOLAR BLUE', 'DOLAR PROMEDIO']
-
-
-for(int i=0; i<3; i++) {
+for (int i = 0; i < 4; i++) {
+		
+	WebUI.openBrowser('http://books.toscrape.com/index.html')
 	
-	x = titulo[i]
-	valorWeb = WebUI.getText(findTestObject('DolarSi/Page_Dolarsi/Titulo-seccion', [('titulo_seccion') : x]))
+	int currentTab = WebUI.getWindowIndex()
 	
-	println(valorWeb)
+	WebDriver driver = DriverFactory.getWebDriver()
+	
+	JavascriptExecutor js = ((driver) as JavascriptExecutor)
+	
+	js.executeScript('window.open();')
+	
+	WebUI.switchToWindowIndex(currentTab + 1)
+	
+	currentTab = WebUI.getWindowIndex()
+	
+	WebUI.navigateToUrl(GlobalVariable.path[i])
+	
+	currentPage = WebUI.getUrl()
+	
+	WebUI.verifyMatch(GlobalVariable.path[i], currentPage, true)
+	
+	WebUI.closeBrowser()
 }
+
+
+
+
+
+
 

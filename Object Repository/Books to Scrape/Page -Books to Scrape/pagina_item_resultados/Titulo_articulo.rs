@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Titulo_articulo</name>
+   <tag></tag>
+   <elementGuidId>684a769d-aac7-4aef-948f-d42f0098d58e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h3</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//body[@id='default']/div/div/div/div/section/div[2]/ol/li/article/h3</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = concat(&quot;It&quot; , &quot;'&quot; , &quot;s Only the Himalayas&quot;) or . = concat(&quot;It&quot; , &quot;'&quot; , &quot;s Only the Himalayas&quot;))]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>79e18b12-3ca9-4b31-b88d-df2ecd128abe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>${title}</value>
+      <webElementGuid>9e1f02fe-d1fd-430b-afc8-ab8bf9807298</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;default&quot;)/div[@class=&quot;container-fluid page&quot;]/div[@class=&quot;page_inner&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-8 col-md-9&quot;]/section[1]/div[2]/ol[@class=&quot;row&quot;]/li[@class=&quot;col-xs-6 col-sm-4 col-md-3 col-lg-3&quot;]/article[@class=&quot;product_pod&quot;]/h3[1]</value>
+      <webElementGuid>41226413-285d-4ee1-a65b-b6d18ba22ce6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//body[@id='default']/div/div/div/div/section/div[2]/ol/li/article/h3</value>
+      <webElementGuid>bf3a16e3-c28c-4573-a0a5-48a918a57594</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Warning!'])[1]/following::h3[1]</value>
+      <webElementGuid>ec44657e-7a44-4594-a644-cc5434908cbd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to basket'])[1]/preceding::h3[1]</value>
+      <webElementGuid>5694e5b0-9967-42bf-be45-53e805b6f63a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h3</value>
+      <webElementGuid>05666470-1f41-4f53-8d5b-36f7a16571f1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = concat(&quot;It&quot; , &quot;'&quot; , &quot;s Only the Himalayas&quot;) or . = concat(&quot;It&quot; , &quot;'&quot; , &quot;s Only the Himalayas&quot;))]</value>
+      <webElementGuid>38b426f4-d83d-496f-a779-9ac9e34473b1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
