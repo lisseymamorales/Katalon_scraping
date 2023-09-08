@@ -27,26 +27,20 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 	
 	//WebUI.openBrowser(GlobalVariable.path[i])
 	
-	WebUI.openBrowser('http://books.toscrape.com/catalogue/category/books/travel_2/index.html')
-	
-	WebDriver driver = DriverFactory.getWebDriver()
-	
-	WebElement Table0 = driver.findElement(By.xpath("//div[1]/div/div/div/section/div[2]/ol")) /*xpath de la grilla*/
-	
-	/*Para localizar filas de la tabla, capturará todas las filas disponibles en la tabla.*/
-	List<WebElement> rows_table0 = Table0.findElements(By.tagName('li'))
-	
-	/*Para calcular el número de filas en la tabla*/
-	def rows_count = rows_table0.size()
-		println rows_count
+
 //}
-		int results = (WebUI.getText(findTestObject('Object Repository/Books to Scrape/Category_page/numero_resultados'))).toInteger()
+
+
+String url = 'http://books.toscrape.com/catalogue/category/books/mystery_3/index.html'
+
+count = CustomKeywords.'getElementList.getElementCount'(url)
+
+println count
+
+int results = (WebUI.getText(findTestObject('Object Repository/Books to Scrape/Category_page/numero_resultados'))).toInteger()
 		
-		println results
 		
-		println (results == rows_count)
-		
-		def condicion = (results == rows_count) ? 1 : 2
+		def condicion = (results == count) ? 1 : 2
 			
 		switch (condicion) {
 			case 1:
@@ -56,23 +50,18 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 			
 			case 2:
 			if(findTestObject('Object Repository/Books to Scrape/Category_page/next')) {
-								
+											
 				WebUI.click(findTestObject('Object Repository/Books to Scrape/Category_page/next'))
-				
-				WebElement Table = driver.findElement(By.xpath("//div[1]/div/div/div/section/div[2]/ol")) /*xpath de la grilla*/
-				
-				/*Para localizar filas de la tabla, capturará todas las filas disponibles en la tabla.*/
-				List<WebElement> rows_table = Table.findElements(By.tagName('li'))
-				
-				/*Para calcular el número de filas en la tabla*/
-				int rows_count2 = rows_table.size()
-				
-				rows_count = rows_count+ rows_count2
+				page2 = WebUI.getUrl()
+				count2 = CustomKeywords.'getElementList.getElementCount'(page2)
+			
+				count = count + count2
 				
 				println results
-				println rows_count
+				println count2
+				println count
 				
-				WebUI.verifyEqual(results, rows_count)
+				WebUI.verifyEqual(results, count)
 			}
 			WebUI.closeBrowser()
 			break;

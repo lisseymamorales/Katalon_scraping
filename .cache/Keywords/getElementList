@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "74679FF8643783C8898557D35E3B3B64",
+  "keywordClasses": [
+    {
+      "name": "getElementList",
+      "keywordMethods": [
+        {
+          "name": "getElementCount",
+          "parameters": [
+            {
+              "name": "url",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
