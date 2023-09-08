@@ -28,7 +28,7 @@ for (int i = 0; i < 4; i++) {
 	
 	item_name = (category[i])
 	
-	String url = WebUI.getAttribute(findTestObject('Books to Scrape/Page -Books to Scrape/Books-List-item', [('item_name') : item_name]),
+	String url = WebUI.getAttribute(findTestObject('Books to Scrape/Main_page/Books-List-item', [('item_name') : item_name]),
 		'href')
 
 	href[i] = url

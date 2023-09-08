@@ -21,9 +21,14 @@ String title = "It's Only the Himalayas"
 
 WebUI.openBrowser('https://books.toscrape.com/catalogue/category/books/travel_2/index.html')
 
-println WebUI.getText(findTestObject('Books to Scrape/Page -Books to Scrape/pagina_item_resultados/Titulo_articulo', [('title') : title]))
+println WebUI.getText(findTestObject('null', [('title') : title]))
 
 
-def prueba_object=  (findTestObject('Object Repository/Books to Scrape/Page -Books to Scrape/pagina_item_resultados/Item_pagina_categoria').selectorCollection)
+def prueba_object=  WebUI.getAttribute(findTestObject('null'),'href')
 
 println prueba_object 
+
+
+
+
+/*(findTestObject('null').selectorCollection)*/

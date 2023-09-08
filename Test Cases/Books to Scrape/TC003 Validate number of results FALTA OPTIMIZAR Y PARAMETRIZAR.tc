@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC003 Validate number of results FALTA OPTIMIZAR Y PARAMETRIZAR</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d56f9677-b415-46ec-8c39-e2729c84ca35</testCaseGuid>
+</TestCaseEntity>
