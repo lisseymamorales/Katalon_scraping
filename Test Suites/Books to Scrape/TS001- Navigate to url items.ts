@@ -25,11 +25,4 @@
       <testCaseId>Test Cases/Books to Scrape/TC002 Navigate to url items</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>8933f284-f30f-4e52-98e0-07d3b42cd2e9</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Books to Scrape/TC003 Validate number of results FALTA OPTIMIZAR Y PARAMETRIZAR</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>

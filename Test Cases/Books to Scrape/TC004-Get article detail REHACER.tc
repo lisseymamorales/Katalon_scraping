@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC003-Get article detail REHACER</name>
+   <name>TC004-Get article detail REHACER</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>75b4cf0a-90be-4ccd-a1b4-70579a5735f3</testCaseGuid>
