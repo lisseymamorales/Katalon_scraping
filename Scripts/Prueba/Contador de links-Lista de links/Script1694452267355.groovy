@@ -16,56 +16,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import org.openqa.selenium.WebDriver as WebDriver
-import org.openqa.selenium.By as By
-import org.openqa.selenium.WebElement as WebElement
-import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
-/*int count = GlobalVariable.path.size()*/
+WebUI.openBrowser('http://books.toscrape.com/index.html')
 
-//for (int i = 0; i < count; i++) {
+println WebUI.getAllLinksOnCurrentPage(false, [])
+
+list = WebUI.getAllLinksOnCurrentPage(false, [], FailureHandling.STOP_ON_FAILURE)
+
+i = list.size()
+
+category = []
+
+for(j=0;j<=i;j++) {
 	
-	//WebUI.openBrowser(GlobalVariable.path[i])
-	
-
-//}
-
-
-String url = 'http://books.toscrape.com/catalogue/category/books/mystery_3/index.html'
-
-count = CustomKeywords.'getElementList.getElementCount'(url)
-
-println count
-
-int results = (WebUI.getText(findTestObject('Object Repository/Books to Scrape/Category_page/numero_resultados'))).toInteger()
+	if(list[j]!= null && list[j].contains('catalogue/category/books')) {
 		
+			category[j]=list[j]
+			
+	}
+}
 
-		def condicion = (results == count) ? 1 : 2
-			println condicion 
-			
-		switch (condicion) {
-			case 1:
-			println "Passed";
-			WebUI.closeBrowser()
-			break;
-			
-			case 2:
-			if(findTestObject('Object Repository/Books to Scrape/Category_page/next')) {
-											
-				WebUI.click(findTestObject('Object Repository/Books to Scrape/Category_page/next'))
-				page2 = WebUI.getUrl()
-				count2 = CustomKeywords.'getElementList.getElementCount'(page2)
-			
-				count = count + count2
-				
-				WebUI.verifyEqual(results, count)
-			}
-			WebUI.closeBrowser()
-			break;
-			
-			default:
-			println "fallido";
-			 }
-			 
+println category
+println category.size()
 
-
+WebUI.closeBrowser()

@@ -27,14 +27,12 @@ public class getElementList {
 	@Keyword
 
 	public static getElementCount(String url) {
-	WebUI.openBrowser(url)
-	WebDriver driver = DriverFactory.getWebDriver()
-	WebElement Table0 =driver.findElement(By.xpath("//div[1]/div/div/div/section/div[2]/ol")) 
-	List<WebElement> rows_table0 = Table0.findElements(By.tagName('li'))
-	def rows_count = rows_table0.size()
-	
-	return rows_count
-	
-}
+		WebUI.openBrowser(url)
+		WebDriver driver = DriverFactory.getWebDriver()
+		WebElement Table0 =driver.findElement(By.xpath("//div[1]/div/div/div/section/div[2]/ol"))
+		List<WebElement> rows_table0 = Table0.findElements(By.tagName('li'))
+		def rows_count = rows_table0.size()
 
+		return rows_count
+	}
 }

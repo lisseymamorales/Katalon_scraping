@@ -16,19 +16,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-
-String title = "It's Only the Himalayas"
-
-WebUI.openBrowser('https://books.toscrape.com/catalogue/category/books/travel_2/index.html')
-
-println WebUI.getText(findTestObject('null', [('title') : title]))
-
-
-def prueba_object=  WebUI.getAttribute(findTestObject('null'),'href')
-
-println prueba_object 
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.Point as Point
 
 
+count = CustomKeywords.'getElementList.getElementCount'('https://books.toscrape.com/catalogue/category/books/travel_2/index.html')
 
+for (i = 1; i <= count; i++) {
+	
+	WebUI.openBrowser('https://books.toscrape.com/catalogue/category/books/travel_2/index.html')
+	
+	WebUI.maximizeWindow()
+	
+	def precio_results = WebUI.getText(findTestObject('Books to Scrape/PRUEBA ARTICULO/articulo', [('item') : i]))
 
-/*(findTestObject('null').selectorCollection)*/
+    precio_results = precio_results.replaceAll('[^0-9]', '').toInteger()/100
+
+	println precio_results
+   
+	WebUI.click(findTestObject('Books to Scrape/PRUEBA ARTICULO/articulo', [('item') : i]))
+	
+	def precio_detail = WebUI.getText(findTestObject('Object Repository/Books to Scrape/PRUEBA ARTICULO/precio_article_detail'))
+		
+	precio_detail = precio_detail.replaceAll('[^0-9]', '').toInteger()/100
+	
+	println precio_detail
+	
+	WebUI.verifyEqual(precio_results, precio_detail)
+	
+	WebUI.closeBrowser()
+}
+
