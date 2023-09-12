@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>articulo</name>
+   <name>titulo</name>
    <tag></tag>
-   <elementGuidId>dbc9d7f4-21d3-4148-b503-d9bee44793b0</elementGuidId>
+   <elementGuidId>9fc4cc1e-1850-4d98-8dbf-23a4e518d53c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
@@ -15,7 +15,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[1]/div/div/div/section/div[2]/ol/li[${item}]/article[count(. | //*[@class = 'product_pod']) = count(//*[@class = 'product_pod'])]</value>
+         <value>/html/body/div[1]/div/div/div/section/div[2]/ol/li[${item}]/article</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,16 +25,8 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[1]/div/div/div/section/div[2]/ol/li[${item}]/article</value>
-      <webElementGuid>16b3f189-1bb3-46e4-b035-387652d79c8c</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>product_pod</value>
-      <webElementGuid>791c1ef5-8776-48ba-b64d-99025f40c47f</webElementGuid>
+      <value>/html/body/div[1]/div/div/div/section/div[2]/ol/li[${item}]/article/h3</value>
+      <webElementGuid>2752eb48-e86d-4be7-a7f5-354cf9575a00</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -42,7 +34,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//body[@id='default']/div/div/div/div/section/div[${item}]/ol/li</value>
-      <webElementGuid>fea43f50-1637-46e8-ac44-af500bd13d3f</webElementGuid>
+      <webElementGuid>af6a38d5-e757-435d-a012-1fa6fc2113da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -50,7 +42,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Warning!'])[1]/following::li[1]</value>
-      <webElementGuid>7462f123-1e99-4a44-9a9d-3f7b165e9ebc</webElementGuid>
+      <webElementGuid>7f625d26-4127-456c-bdc5-0567dfa48dfb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -58,7 +50,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//ol/li</value>
-      <webElementGuid>27d8da4d-1f80-4087-8475-ef5f11450fd3</webElementGuid>
+      <webElementGuid>9516c084-0720-49e8-92a7-24b9b571d88b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -212,6 +204,6 @@
     
 
 &quot;))]</value>
-      <webElementGuid>e0b31cb4-3bcf-464e-aacb-686f665182d7</webElementGuid>
+      <webElementGuid>31b7ff03-0c1e-49e8-8b72-2a765c5f6622</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>precio_article_detail</name>
+   <name>priceResult</name>
    <tag></tag>
-   <elementGuidId>143b7f74-8dfc-4fca-8c3c-e57995c1ec72</elementGuidId>
+   <elementGuidId>197bbf92-c91d-4d7d-a5ec-50fd972a934b</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;content_inner&quot;]/article/div[1]/div[2]/p[1]</value>
-      </entry>
       <entry>
          <key>CSS</key>
          <value>p.price_color</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>#default > div.container-fluid.page > div > div > div > section > div:nth-child(2) > ol > li:nth-child(2) > article > div.product_price > p.price_color</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div/div/div/div/section/div[2]/ol/li[${number}]/article/div[2]/p[1][count(. | //*[@class = 'price_color']) = count(//*[@class = 'price_color'])]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,47 +26,39 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>3531f806-16b9-42c5-9cf5-eb06afac7f71</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>price_color</value>
-      <webElementGuid>24a78900-efb9-4ff9-a72d-6bb8e4cc34a8</webElementGuid>
+      <webElementGuid>926b647c-980f-48d7-bbd0-b6a87acc46a6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>text</name>
+      <name>class</name>
       <type>Main</type>
-      <value>£45.17</value>
-      <webElementGuid>6a36c230-d816-4c4f-937e-b08582dbbd7b</webElementGuid>
+      <value>price_color</value>
+      <webElementGuid>7fe442de-9a65-4c94-a918-587f3973b58b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>£45.17</value>
+      <webElementGuid>b07bc58f-c92b-4827-9796-58d931da577c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;content_inner&quot;)/article[@class=&quot;product_page&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-6 product_main&quot;]/p[@class=&quot;price_color&quot;]</value>
-      <webElementGuid>1e8d5646-717d-4847-939f-aa6ace83c23a</webElementGuid>
+      <value>/html/body/div/div/div/div/section/div[2]/ol/li[${number}]/article/div[2]/p[1]</value>
+      <webElementGuid>7fb3c53a-db4e-449b-b1a1-a9e70b695c39</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='content_inner']/article/div/div[2]/p</value>
-      <webElementGuid>51a082f1-d91b-4cce-bae9-3ee217af8e83</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('It', &quot;'&quot;, 's Only the Himalayas')])[2]/following::p[1]</value>
-      <webElementGuid>d9717319-accb-463f-a1ef-53532da5e46e</webElementGuid>
+      <value>//body[@id='default']/div/div/div/div/section/div[2]/ol/li/article/div[2]/p</value>
+      <webElementGuid>2bc67792-caf1-4dc0-ba8b-df31477acfe1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,23 +66,31 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)=concat('It', &quot;'&quot;, 's Only the Himalayas')])[1]/following::p[1]</value>
-      <webElementGuid>38482015-e029-4eee-839f-84bdf2f605a5</webElementGuid>
+      <webElementGuid>74405940-b1a5-40e1-8a5a-d5b05891f28d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Warning!'])[1]/preceding::p[3]</value>
-      <webElementGuid>84770112-e753-4eda-8fad-9786e143d4b9</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Warning!'])[1]/following::p[2]</value>
+      <webElementGuid>0442d452-f5cd-4ecf-9241-6849ece1258c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Product Description'])[1]/preceding::p[3]</value>
-      <webElementGuid>c35445d9-0de0-4d1e-96a2-6387888cdb0b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to basket'])[1]/preceding::p[2]</value>
+      <webElementGuid>310fc247-d278-4c58-823e-aff5e83f5a24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Full Moon over Noah’s ...'])[1]/preceding::p[3]</value>
+      <webElementGuid>79af8665-9fbe-4b86-9863-22d63ab610c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,15 +98,15 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='£45.17']/parent::*</value>
-      <webElementGuid>ccb8cdcf-8585-4ea3-9480-cb7bf2b20c21</webElementGuid>
+      <webElementGuid>4710bfa8-5d74-4645-9e0b-6b6e64422616</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//p</value>
-      <webElementGuid>d0085045-daec-4bec-90b2-080a81cabc62</webElementGuid>
+      <value>//div[2]/p</value>
+      <webElementGuid>911697a5-4122-434b-9909-68cd3a47ee4b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +114,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = '£45.17' or . = '£45.17')]</value>
-      <webElementGuid>8ab17fa5-5df0-4355-a025-51d4ea2e3eb3</webElementGuid>
+      <webElementGuid>76d4f76c-dd42-4d7a-afdb-e6394a5ce6ec</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

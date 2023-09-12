@@ -6,6 +6,10 @@
    <elementGuidId>ed1d8d5a-9fb0-45bb-9db1-89c892374146</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//body[@id='default']/div/div/div/div/section</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[(text() = concat(&quot;
             Warning! This is a demo website for web scraping purposes. Prices and ratings here were randomly assigned and have no real meaning.
@@ -1689,10 +1693,6 @@
          <key>CSS</key>
          <value>section</value>
       </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//body[@id='default']/div/div/div/div/section</value>
-      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
@@ -1702,7 +1702,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>section</value>
-      <webElementGuid>0994fcb0-0acc-416f-9811-f29023d1438c</webElementGuid>
+      <webElementGuid>19102bd5-19bc-4155-83f3-6a444e62fa3f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -2548,7 +2548,7 @@
 
             
         </value>
-      <webElementGuid>b2729b24-78bb-4003-8736-ff6202da32c6</webElementGuid>
+      <webElementGuid>c185bc79-11b0-4f2f-a7d1-f06824ab0be6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -2556,7 +2556,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;default&quot;)/div[@class=&quot;container-fluid page&quot;]/div[@class=&quot;page_inner&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-8 col-md-9&quot;]/section[1]</value>
-      <webElementGuid>c9c45282-b2dc-449c-8822-bcebfed77d45</webElementGuid>
+      <webElementGuid>9b66ff5a-df9d-404f-8813-d72f743aa35f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -2564,7 +2564,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//body[@id='default']/div/div/div/div/section</value>
-      <webElementGuid>45ae3b23-7406-447b-9ae7-344ab94f6665</webElementGuid>
+      <webElementGuid>45b80533-0396-458d-950a-e8aedca48c14</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -2572,7 +2572,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Travel'])[3]/following::section[1]</value>
-      <webElementGuid>d2d50a22-35b2-491b-8714-05b6d818d630</webElementGuid>
+      <webElementGuid>de551576-e256-4f2e-93fa-e664503c85ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -2580,7 +2580,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section</value>
-      <webElementGuid>91fc14cc-7d37-46c1-80e8-0332c1c8de5e</webElementGuid>
+      <webElementGuid>a0402aa7-2164-4785-8598-6f95bdf74adc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -4264,6 +4264,6 @@
 
             
         &quot;))]</value>
-      <webElementGuid>89110d6f-9e01-4b54-9d41-88ce87404d1d</webElementGuid>
+      <webElementGuid>6f95a38e-1138-4ead-87ba-915b92b85dd2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

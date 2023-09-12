@@ -6,12 +6,12 @@
    <elementGuidId>7de314e7-9ae3-44ff-81f3-254761b9f31c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>li.next > a</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//body[@id='default']/div/div/div/div/section/div[2]/div/ul/li[2]/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.next > a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>1f9fa03f-d75a-4fd6-b5da-a2c2d2c0ef2d</webElementGuid>
+      <webElementGuid>88eb347b-9053-4a24-bd3e-ebf94cc1d195</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>page-2.html</value>
-      <webElementGuid>3fe0d6e7-3dae-4783-9e65-1b036b2cba7a</webElementGuid>
+      <webElementGuid>d491890c-69a8-431f-b15b-071579465f77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>next</value>
-      <webElementGuid>810bdb03-414b-49ab-bf19-0ef6c763179e</webElementGuid>
+      <webElementGuid>1a0ec8f9-6e8b-462c-8e20-227d5368af87</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;default&quot;)/div[@class=&quot;container-fluid page&quot;]/div[@class=&quot;page_inner&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-sm-8 col-md-9&quot;]/section[1]/div[2]/div[1]/ul[@class=&quot;pager&quot;]/li[@class=&quot;next&quot;]/a[1]</value>
-      <webElementGuid>26c64f93-2c4d-4349-a499-fbb60f8e9e1a</webElementGuid>
+      <webElementGuid>eb4e77c1-fd86-4912-aa62-c49e08aa37b9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//body[@id='default']/div/div/div/div/section/div[2]/div/ul/li[2]/a</value>
-      <webElementGuid>fd139448-7ced-4576-a1c1-5b1dd41e5607</webElementGuid>
+      <webElementGuid>242533b8-033e-4c70-85d4-4215ae44a7b3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'next')]</value>
-      <webElementGuid>d5445f32-3880-47f9-9a19-05ecbe6d26b4</webElementGuid>
+      <webElementGuid>8f24e6bb-2357-45a4-b6cc-f1de59243a65</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Page 1 of 2'])[1]/following::a[1]</value>
-      <webElementGuid>7b9d1ab6-3c1d-4281-a9a2-d93510086268</webElementGuid>
+      <webElementGuid>2d2c8f86-e52c-4bab-9d02-6dc9a51915e1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to basket'])[20]/following::a[1]</value>
-      <webElementGuid>0e426caa-ea31-4500-a183-981b88f7e2d5</webElementGuid>
+      <webElementGuid>e7bc6965-b150-4407-a485-d5d032de5968</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::a[1]</value>
-      <webElementGuid>b53f9f79-e928-4616-9ddc-880e48599d4a</webElementGuid>
+      <webElementGuid>fc8b0608-6445-4445-9058-e9d385775833</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::a[1]</value>
-      <webElementGuid>d4f1f74f-210e-453a-9e88-6793ff3eab0f</webElementGuid>
+      <webElementGuid>af7673a9-cc2f-4d54-8c60-c4c85f2ee0e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='next']/parent::*</value>
-      <webElementGuid>0dc72df1-2ae6-4726-b81d-2e667cff6970</webElementGuid>
+      <webElementGuid>6934a374-ebfa-4b11-a49b-8b2f4bc0a764</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'page-2.html')]</value>
-      <webElementGuid>89d54f17-f5a9-4519-9fcc-feafdbe9ed10</webElementGuid>
+      <webElementGuid>10cc0b1f-bbf0-43b9-8d8c-81b125e4d86f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/ul/li[2]/a</value>
-      <webElementGuid>34747f6b-b962-4f2c-b0e8-6ca57176bd75</webElementGuid>
+      <webElementGuid>8c6933b7-6c91-4d7d-81c8-3004d7de6e16</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = 'page-2.html' and (text() = 'next' or . = 'next')]</value>
-      <webElementGuid>e00744f2-1d3e-4455-81d3-4b2e3ff1e196</webElementGuid>
+      <webElementGuid>d58472c5-b2a8-49f4-adb4-e8e1e1133a6f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
