@@ -16,15 +16,32 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebElement as WebElement
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.Point as Point
 
 
+count = CustomKeywords.'getElementList.getElementCount'('https://books.toscrape.com/catalogue/category/books/mystery_3/index.html')
 
-for (i = 1; i <= 11; i++) {
-	WebUI.openBrowser('https://books.toscrape.com/catalogue/category/books/travel_2/index.html')
-	
-	WebUI.click(findTestObject('Books to Scrape/PRUEBA ARTICULO/articulo_image', [('item') : i]))
-	
-	WebUI.closeBrowser()
-	
+for (i = 1; i <= count; i++) {
+    WebUI.openBrowser('https://books.toscrape.com/catalogue/category/books/mystery_3/index.html')
+
+    WebUI.maximizeWindow()
+
+    def precio_results = WebUI.getText(findTestObject('Books to Scrape/PRUEBA ARTICULO/priceResult', [('number') : i]))
+
+    println(precio_results)
+
+    WebUI.click(findTestObject('Books to Scrape/PRUEBA ARTICULO/articulo_image', [('item') : i]))
+
+    def precio_detail = WebUI.getText(findTestObject('Object Repository/Books to Scrape/PRUEBA ARTICULO/precio_article_detail'))
+
+    println(precio_detail)
+
+    WebUI.verifyEqual(precio_results, precio_detail)
+
+    WebUI.closeBrowser()
 }
 

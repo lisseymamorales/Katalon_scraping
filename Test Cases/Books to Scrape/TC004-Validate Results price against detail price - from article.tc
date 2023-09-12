@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Extracción de precio del item articulo, implica un replace all y convertir precio en entero (int)</description>
+   <name>TC004-Validate Results price against detail price - from article</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>75b4cf0a-90be-4ccd-a1b4-70579a5735f3</testCaseGuid>
+</TestCaseEntity>

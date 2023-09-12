@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC004-Validate Results price against detail price</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>75b4cf0a-90be-4ccd-a1b4-70579a5735f3</testCaseGuid>
-</TestCaseEntity>
